@@ -93,25 +93,25 @@ main {
 }
 
 #card-one {
-    background-image: url(/images/real_estate.jpg);
+    background-image: url(./images/real_estate.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #card-two {
-    background-image: url(/images/programming.jpg);
+    background-image: url(./images/programming.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #card-three {
-    background-image: url(/images/operations.jpg);
+    background-image: url(./images/operations.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #card-four {
-    background-image: url(/images/contact_cat.jpg);
+    background-image: url(./images/contact_cat.jpg);
     background-size: cover;
     background-position: center;
 }
