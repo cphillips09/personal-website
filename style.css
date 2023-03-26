@@ -1,0 +1,243 @@
+/* Global Settings */
+
+:root {
+    --oxford-blue: hsla(225, 62%, 10%, 1);
+    --maximum-green: hsla(89, 39%, 40%, 1);
+    --white: hsla(40, 27%, 98%, 1);
+    --bone: hsla(39, 35%, 85%, 1);
+    --tuscan-red: hsla(5, 27%, 39%, 1);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+    
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+    
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome */
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+/* Header Settings */
+
+#header-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--oxford-blue);
+    border-bottom: 5px solid var(--tuscan-red);
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 3.75rem;
+    font-weight: 900;
+    color: var(--white);
+    padding: 5px 25px;
+}
+
+/* Main Settings */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 90vh;
+    padding: 1rem 0;
+}
+
+#main-wrapper {
+    display: flex;
+    width: 80vw;
+    min-width: 280px;
+    max-width: 1080px;
+    justify-content: center;
+    padding: 8px;
+}
+
+#main-options {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    gap: 1.25rem 1.25rem;
+    width: 100%;
+    max-height: 1200px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--maximum-green);
+    border: 6px solid var(--tuscan-red);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#card-one {
+    background-image: url(/images/real_estate.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#card-two {
+    background-image: url(/images/programming.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#card-three {
+    background-image: url(/images/operations.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#card-four {
+    background-image: url(/images/contact_cat.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#option-one,
+#option-two,
+#option-three,
+#option-four {
+    display: none;
+    margin: 0.5rem;
+    padding: 1.5rem;
+    background-color: var(--maximum-green);
+    border: 6px solid var(--tuscan-red);
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+.close {
+    position: relative;
+    left: 95%;
+    color: black;
+    font-family: sans-serif;
+    font-size: 2.25rem;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: monospace;
+    font-size: 3.25rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.75;
+    color: var(--oxford-blue);
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-family: monospace;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--oxford-blue);
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+
+h4 {
+    font-family: monospace;
+    font-size: 2.75rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+    color: var(--bone);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    width: 100%;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+.process {
+    font-family: monospace;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--bone);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+a {
+    color: var(--oxford-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+figure {
+    margin: 0 15%;
+}
+
+#contact-img {
+    border: 3px solid var(--oxford-blue);
+    border-radius: 5px;
+}
+
+figcaption {
+    text-align: right;
+}
+
+
+@media screen and (max-width: 700px) {
+    #main-options {
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+        line-height: 1.25;
+        margin: 1rem 0;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-family: Helvetica, sans-serif;
+        font-size: 1.25rem;
+    }
+
+    .process {
+        font-size: 1.5rem;
+    }
+}
