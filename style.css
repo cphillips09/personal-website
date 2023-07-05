@@ -214,6 +214,10 @@ figcaption {
         grid-template: 1fr 1fr 1fr 1fr / 1fr;
     }
 
+    #main-wrapper {
+        width: 100vw;
+    }
+
     h1 {
         font-size: 2.25rem;
     }
