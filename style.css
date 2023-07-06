@@ -188,7 +188,6 @@ p {
 
 a {
     color: var(--oxford-blue);
-    text-decoration: none;
 }
 
 a:hover {
